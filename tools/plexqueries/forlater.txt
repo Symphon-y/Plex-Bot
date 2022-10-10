@@ -1,0 +1,27 @@
+ //   client
+    //     .query('/')
+    //     .then(function (result) {
+    //       console.log(
+    //         result.MediaContainer.friendlyName,
+    //         result.MediaContainer.Directory.forEach((item) => {
+    //           console.log(item);
+    //         })
+    //       );
+
+    //       // array of children, such as Directory or Server items
+    //       // will have the .uri-property attached
+    //       console.log(result.MediaContainer);
+    //     })
+    //     .catch((err) => {
+    //       console.error('Could not connect to server', err);
+    //     });
+
+    //   client
+    //     .find('/library/sections/1', { key: 'all' })
+    //     .then(function (directories) {
+    //       // directories would be an array of sections whose type are "movie"
+    //       console.log(directories);
+    //     })
+    //     .catch((err) => {
+    //       console.log(err);
+    //     });
