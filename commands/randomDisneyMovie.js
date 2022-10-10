@@ -14,11 +14,11 @@ const client = new PlexAPI('192.168.1.25');
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName('movienight')
-    .setDescription('Replies with A Random Movie! '),
+    .setName('disneymovienight')
+    .setDescription('Replies with A Random Disney Movie! '),
   async execute(interaction) {
     client
-      .query('/library/sections/1/all?')
+      .query('/library/sections/2/all?')
       .then(function (result) {
         const library = result.MediaContainer.Metadata;
         const randomMovie = Math.floor(Math.random() * library.length);
